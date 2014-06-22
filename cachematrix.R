@@ -18,8 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
-##if the cache is empty,it will first compute the value and then store 
-##it in the cache
+##if the cache is empty(ie if the inverse is yet to be calculated),
+##it will first compute the value and then store it in the cache
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
